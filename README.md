@@ -1,4 +1,4 @@
-[Link to my project]
+[https://akan-namegenerator.netlify.app/]
 
 # Akan Name Generator
 ####   This web application that takes a your birthday, calculates the day of the week you were born and then depending on your gender outputs their Akan Name., 1/10/2021
