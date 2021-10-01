@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <main class="container main-content">
+      <h2 class="main-header">Akan Name Generator</h2>
+      <hr>
+      <h3 class="small-header">Welcome</h3>
+      <img src="image.jpg" width="fit-content" alt="children smiling"class="img-fluid">
+      <p>
+        <span class="form-heading">Fill out your Birthday and discover: </span><br>This web application that takes a your birthday, calculates the day of the week you were born and then depending on your gender outputs their Akan Name.
+      </p>
+      <br>
+      <form id="MyForm" action="link.php" method="GET">
+        <div class="the-form row">
+          <div class="form-part form-part-left col-lg-6 col-12">
+            <h4 class="small-header">Year of Birth:</h4>
+            <input class="field form-field" type="number" name="year" value="year" size="4" placeholder="e.g. 2000" required>
+            <h4 class="small-header">Month of birth:</h4>
+            <input class="field form-field" type="text" name="month" size="2" placeholder="e.g. 1-12" required>
+            <h4 class="small-header">Day of Month:</h4>
+            <input class="field form-field" type="text" name="day" size="2" placeholder="e.g. 1-31" required>
+            <h4 class="small-header">Gender:</h4>
+            <div class="radio">
+              <input class="radio" type="radio" name="gender" value="male"> Male
+              <input class="radio" type="radio" name="gender" value="female"> Female
+            </div>
+            <br>
+            <div class="submit-buttons">
+              <input class="btn btn-sm m-2 getBdayButton" type="submit" value="Get Birthday" onclick="birthday(this.form); return false;">
+              <input class="btn m-2 btn-danger btn-sm" type="reset" value="Reset Fields">
+            </div>
+          </div>
+
+          <div class="form-part p-3 col-lg-6 col-12">
+            <h3 class="small-header ghana-header"> Know your Akan name </h3>
+            <p class="intro-paragraph ghana-paragraph">
+            In Ghana, Names are allocated to new-born babies, according to the Day of the Week they were born & their Gender. These are called <strong>Akan Names</strong>
+            </p>
+            <h4 class="small-header akan-name"> Your Akan Name is: </h4>
+            <input class="display align" type="text" name="result2" readonly size="">
+            <p id="result" class="ml-3"></p>
+          </div>
+        </div>
+      </form>
+      <hr>
+      <footer class="text-center">
+        <small>&copy;2021: Monica All Rights Reserved</small>
+      </footer>
+    </main>
+    <script src="jquery.min.js"></script>
+    <script src="birthday.js"></script>
+  </body>
+</html>
