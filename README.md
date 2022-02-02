@@ -2,7 +2,6 @@
 
 # Akan Name Generator
 ####   This web application that takes a your birthday, calculates the day of the week you were born and then depending on your gender outputs their Akan Name., 1/10/2021
-#### By **MonicaOduor**
 ## Description
 Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.This page shows your Akan Name depending on your gender and date of birth.
 ## Setup/Installation Requirements
